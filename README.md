@@ -1,20 +1,9 @@
-## Install `tpm` (tmux plugin manager)
+## Install
 
 ```bash
-git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
-```
-
-## Copy `.tmux.conf` in the home
-```bash
-git clone --depth=1 git@github.com:sciccolella/tmux-config.git tmux.tmp.git ; mv tmux.tmp.git/.tmux.conf $HOME
-```
-
-## Install plugins
-Inside tmux press `prefix+I`. In this config `prefix` is bound to `<C-S>` to avoid conflicts with default keybindings of `nvim` with `<C-a>` and `<C-b>`. 
-
-## Add custom RAM plugin for `catppuccin` status bar
-```bash
+git clone --recursive git@github.com:sciccolella/tmux-config.git ~/.config/tmux
+tmux source ~/.config/tmux/tmux.conf
 
 ```
-
-## Remove temporary git clone dir
+**Plugin installation**
+Enter `tmux` and press `prefix`+`I`. (`<CTRL-b>+I`)
